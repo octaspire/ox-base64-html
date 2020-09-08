@@ -1,0 +1,9 @@
+#+TITLE: ox-base64-html
+
+* About
+
+=ox-base64-html= is Org export backend for GNU Emacs.
+It exports Org mode documents into stand alone HTML5 files with
+base64 data URI embedded assets. Assets like images, videos and
+compressed archives are embedded into the generated HTML5 file,
+so that it can be used alone, without any external assets.
