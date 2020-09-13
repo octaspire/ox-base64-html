@@ -87,18 +87,26 @@ INFO is a plist holding extra information."
   (save-match-data
     (let* ((block-type (org-element-property :type special-block))
 	   (attributes (org-export-read-attribute :attr_html special-block))
+	   (poster (plist-get attributes :poster))
 	   (str (concat " " (org-html--make-attribute-string attributes)))
 	   (regexp "src=\".*\" ")
 	   (start (string-match regexp contents))
 	   (end (match-end 0)))
       (if (and (string= block-type "video") (and start end))
-	  (format "<%s%s>\n<source src=\"%s\" type=\"video/mp4\">\n\
+	  (progn
+	    (when poster
+	      (setq attributes (plist-put
+				attributes
+				:poster
+				(octaspire/get-data-url poster)))
+	      (setq str (concat " " (org-html--make-attribute-string attributes))))
+	    (format "<%s%s>\n<source src=\"%s\" type=\"video/mp4\">\n\
 Your browser does not support the video tag.\n</%s>"
-		  block-type
-		  str
-		  (octaspire/get-data-url
-		   (substring contents (+ start 5) (- end 2)))
-		  block-type)
+		    block-type
+		    str
+		    (octaspire/get-data-url
+		     (substring contents (+ start 5) (- end 2)))
+		    block-type))
 	(org-html-special-block special-block contents info)))))
 
 (defun octaspire/html-copy-button (id text)
