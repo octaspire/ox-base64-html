@@ -1,3 +1,17 @@
+(require 'package)
+
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/") t)
+
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
 (load "~/ox-base64-html/ox-base64-html.el")
 (require 'ob-css)
 (require 'ox-publish)
