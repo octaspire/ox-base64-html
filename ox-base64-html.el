@@ -25,6 +25,9 @@
 ;; assets like images, videos and compressed archives as base64
 ;; encoded data URIs into the generated HTML5 file.
 
+(use-package noflet
+  :ensure t)
+
 (require 'org)
 (require 'ox-html)
 (require 'noflet)
