@@ -1,0 +1,250 @@
+#+BEGIN_COMMENT
+#+SETUPFILE: ~/.config/emacs/octaspire/css/base64-style.org
+#+SETUPFILE: ~/.config/emacs/octaspire/css/file-style.org
+#+END_COMMENT
+
+#+TITLE: Aenean in Sem ac Leo Mollis Blandit
+
+* Nunc Aliquet Augue Nec Adipiscing
+
+ [[http://google.com]]
+
+ [[file:assets/archive/archive.zip]]
+
+ Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+ Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+ potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+ dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+ laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+ Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+ Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+ vitae placerat urna tortor vitae lacus.  Nullam libero mauris.
+
+ [[./assets/image/image.jpg]]
+
+ consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+ felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+ rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+ sit amet elit.
+
+ [[./assets/image/image.png]]
+
+ Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis
+ vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec
+ dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci,
+
+#+begin_example
+Line 1.
+Line 2.
+#+end_example
+
+#+ATTR_HTML: :controls controls :poster assets/video/poster.png
+#+BEGIN_video
+#+HTML: <source src="assets/video/intro.mp4" type="video/mp4">
+#+END_video
+
+ Nullam eu ante vel est convallis[fn:1] dignissim.  Fusce suscipit, wisi nec
+ facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+ quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+ Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+ interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+ Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ ornare nulla, non *luctus* diam neque sit amet urna.  Curabitur
+ vulputate vestibulum lorem.  /Fusce/ sagittis, libero non molestie
+ mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+ eros.  Sed id ligula quis est convallis tempor[fn:2].  Curabitur lacinia
+ pulvinar nibh.  Nam a sapien.
+
+#+BEGIN_aside
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+#+END_aside
+
+
+| Name | Age | Phone | Description                                                                                                                                                       |
+|------+-----+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| aaa  | bbb | ccc   | =Pellentesque tristique imperdiet tortor.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.= |
+| skd  | ddd | djd   | abc                                                                                                                                                               |
+
+** Cras Placerat Accumsan Nulla
+
+ Sodales ~int main(void);~ dapibus suscipit ligula.  Donec posuere augue in quam.
+ Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+ potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+ dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.
+ Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis
+ ultricies.  Integer placerat tristique nisl.  Praesent augue.
+ Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui
+ dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam
+ libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris
+ mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla
+ facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus,
+ et dictum nunc justo sit amet elit.
+
+#+BEGIN_SRC elisp
+(add-hook 'dashboard-mode-hook
+	  (lambda ()
+	    (setq-local global-hl-line-mode nil)))
+#+END_SRC
+
+#+BEGIN_SRC c
+int main(void)
+{
+  int x = 123;
+  char const * const tmp = "Nullam rutrum.  Etiam laoreet quam sed arcu.  Donec pretium posuere tellus.\n";
+  return 0;
+}
+#+END_SRC
+
+#+begin_src cpp
+int main(void)
+{
+    return 0;
+}
+#+end_src
+
+#+BEGIN_SRC lisp
+;; This is a comment
+(defun square (x)
+   (* x x))
+#+END_SRC
+
+#+begin_src scm
+(and 1 2 #f)
+#+end_src
+
+#+BEGIN_SRC octaspire-dern
+(+ 1 2 3)
+#+END_SRC
+
+#+BEGIN_SRC shell
+cd ~/Documents
+#+END_SRC
+
+#+BEGIN_SRC css
+.src-diff::before {
+    content: "Diff"
+}
+#+END_SRC
+
+#+BEGIN_SRC xml
+<root a="1">
+  <a/>
+</root>
+#+END_SRC
+
+#+BEGIN_SRC json
+{
+  "firstName": "John",
+  "lastName": "Smith"
+}
+#+END_SRC
+
+#+begin_src yaml
+date: 2020-08-31
+#+end_src
+
+#+begin_src js
+var button = document.querySelector('#button_toc_toggle');
+button.addEventListener('click', function(event) {
+    var s = document.querySelector('#table-of-contents').style;
+    if (s.display == 'none' || s.display == '') {
+	s.display = 'block';
+    } else {
+	s.display = 'none';
+    }
+});
+#+end_src
+
+#+begin_src java
+public class Hello {
+    public static void main(String[] args) {
+        // This is a comment.
+        System.out.println("Hello World!");
+    }
+}
+#+end_src
+
+#+begin_src clj
+(def a 42)
+#+end_src
+
+#+begin_src python
+print('Hello World!')
+#+end_src
+
+#+BEGIN_SRC make
+all: test
+
+.PHONY: clean
+
+test: test.c
+    gcc test.c
+
+clean:
+    rm -f test.o test
+#+END_SRC
+
+#+BEGIN_SRC diff
+2c2
+< 2
+---
+> a
+4a5
+> b
+#+END_SRC
+
+#+BEGIN_SRC s
+movl -4(%abp), %eax   # This is a comment.
+#+END_SRC
+
+#+begin_src asm
+mov ah, 0x9
+#+end_src
+
+** TODO Donec Vitae Dolor.
+
+ - Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis
+   tempor ligula erat quis odio. Proin neque massa, cursus ut, gravida ut,
+   lobortis eget, lacus.
+
+ - Cras placerat accumsan nulla.  Nam vestibulum accumsan nisl.
+   Aenean in sem ac leo mollis blandit.
+
+ - Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+   ridiculus mus. Nullam tristique diam non turpis.  Nullam eu ante vel
+   est convallis dignissim.  Aenean in sem ac leo mollis blandit.
+
+** DONE Nulla Facilisis
+
+ Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+ facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+ quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed
+ pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec
+ adipiscing interdum, lacus tellus malesuada massa, quis varius mi
+ purus non odio.  Pellentesque condimentum, magna ut suscipit
+ hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet
+ urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero
+ non molestie mollis, magna orci ultrices dolor, at vulputate neque
+ nulla lacinia eros.  Sed id ligula quis est convallis tempor.
+ Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+ - [ ] Suspendisse potenti.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ - [X] Aenean in sem ac leo mollis blandit.  In id erat non orci commodo lobortis.
+ - [ ] Etiam laoreet quam sed arcu.  Phasellus purus.
+
+ | Cras placerat accumsan nulla | Aliquam erat volutpat                                                                       | Aliquam posuere                                                  |
+ | Phasellus lacus.             | Nam euismod tellus id erat.  Nunc porta vulputate tellus. Nullam tristique diam non turpis. | Nunc porta vulputate tellus.                                     |
+ | Nullam tempus.               | Nam a sapien.  Aliquam posuere.  Nullam rutrum.                                             | Nullam tristique diam non turpis. Mauris mollis tincidunt felis. |
+
+[fn:1]This is the first footnote.
+[fn:2]And this is the second one.

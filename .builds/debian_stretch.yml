@@ -1,0 +1,26 @@
+image: debian/bullseye
+packages:
+    - build-essential
+    - emacs
+sources:
+    - https://git.sr.ht/~octaspire/ox-base64-html
+tasks:
+    - setup: |
+        cd
+        mkdir www
+        cd ox-base64-html
+    - show-version: |
+        emacs --version
+    - run-emacs-test-load: |
+        emacs --batch --eval '(progn (load "~/ox-base64-html/ox-base64-html.el") (let ((str (format "%s\n" (featurep '\''ox-base64-html)))) (append-to-file str nil "~/result.txt")) (kill-emacs))'
+    - show-load-result: |
+        cat ~/result.txt
+    - check-load-result: |
+        printf 't\n' > expected.txt
+        diff expected.txt result.txt
+    - run-emacs-ert-test: |
+        emacs --batch -l ert -l "~/ox-base64-html/ox-base64-html.el" -f ert-run-tests-batch-and-exit
+    - run-emacs-test-export: |
+        emacs --batch --eval '(progn (load "~/ox-base64-html/doc/example/publish.el") (octaspire/publish) (kill-emacs))'
+    - show-export-result: |
+        cat "~/www/example.html"
