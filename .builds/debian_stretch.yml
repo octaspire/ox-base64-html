@@ -19,7 +19,7 @@ tasks:
         printf 't\n' > expected.txt
         diff expected.txt result.txt
     - run-emacs-ert-test: |
-        emacs --batch -l ert -l "~/ox-base64-html/ox-base64-html.el" -f ert-run-tests-batch-and-exit
+        emacs --batch -l ert -l "~/ox-base64-html/doc/example/publish.el" -f ert-run-tests-batch-and-exit
     - run-emacs-test-export: |
         emacs --batch --eval '(progn (load "~/ox-base64-html/doc/example/publish.el") (octaspire/publish) (kill-emacs))'
     - show-export-result: |
