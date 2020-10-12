@@ -16,7 +16,7 @@
 
 ;; Author: octaspire.com
 ;; Version: 0.1.0
-;; Package-Requires: ((noflet))
+;; Package-Requires: ((noflet "0.0.15") (s "1.12.0"))
 ;; Keywords: Org, export, HTML5, base64
 
 ;;; Commentary:
@@ -26,6 +26,9 @@
 ;; encoded data URIs into the generated HTML5 file.
 
 (use-package noflet
+  :ensure t)
+
+(use-package s
   :ensure t)
 
 (require 'org)
