@@ -2,6 +2,7 @@ image: debian/bullseye
 packages:
     - build-essential
     - emacs
+    - tidy
 sources:
     - https://git.sr.ht/~octaspire/ox-base64-html
 tasks:
@@ -23,4 +24,6 @@ tasks:
     - run-emacs-test-export: |
         emacs --batch --eval '(progn (load "~/ox-base64-html/doc/example/publish.el") (octaspire/publish) (kill-emacs))'
     - show-export-result: |
-        cat "~/www/example.html"
+        cat "$HOME/www/example.html"
+    - check-export-result: |
+        tidy -eq "$HOME/www/example.html"
