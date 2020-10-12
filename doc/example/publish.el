@@ -16,6 +16,9 @@
 (require 'ob-css)
 (require 'ox-publish)
 
+(use-package htmlize
+  :ensure t)
+
 (setq org-publish-project-alist
       '(("org"
 	 :base-directory "~/ox-base64-html/doc/example/"
