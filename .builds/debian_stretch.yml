@@ -26,5 +26,4 @@ tasks:
     - show-export-result: |
         cat "$HOME/www/example.html"
     - check-export-result: |
-        tidy -eq "$HOME/www/example.html"
-        if [ $? -eq 2 ]; then echo 'ERRORS' && false; else echo 'OK' && true; fi
+        tidy -eq "$HOME/www/example.html" || if [ $? -eq 2 ]; then echo 'ERRORS' && false; else echo 'OK' && true; fi
