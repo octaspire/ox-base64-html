@@ -1,6 +1,6 @@
+#+SETUPFILE: ~/.config/emacs/octaspire/submodules/ox-octaspire-css/base64-style.org
 #+BEGIN_COMMENT
-#+SETUPFILE: ~/.config/emacs/octaspire/css/base64-style.org
-#+SETUPFILE: ~/.config/emacs/octaspire/css/file-style.org
+#+SETUPFILE: ~/.config/emacs/octaspire/submodules/ox-octaspire-css/file-style.org
 #+END_COMMENT
 
 #+TITLE: Aenean in Sem ac Leo Mollis Blandit
@@ -20,6 +20,7 @@
  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
  vitae placerat urna tortor vitae lacus.  Nullam libero mauris.
 
+#+CAPTION: Images can have captions.
  [[./assets/image/image.jpg]]
 
  consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
