@@ -1,5 +1,6 @@
-#+SETUPFILE: ~/.config/emacs/octaspire/submodules/ox-octaspire-css/base64-style.org
+#+SETUPFILE: ../../../ox-octaspire-css/base64-style.org
 #+BEGIN_COMMENT
+#+SETUPFILE: ~/.config/emacs/octaspire/submodules/ox-octaspire-css/base64-style.org
 #+SETUPFILE: ~/.config/emacs/octaspire/submodules/ox-octaspire-css/file-style.org
 #+END_COMMENT
 
@@ -75,6 +76,31 @@ pulvinar nibh.  Nam a sapien.
 |------+-----+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | aaa  | bbb | ccc   | =Pellentesque tristique imperdiet tortor.  Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.= |
 | skd  | ddd | djd   | abc                                                                                                                                                               |
+
+Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor,
+at vulputate neque nulla lacinia eros.  Sed id ligula quis est
+convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+#+begin_quote
+... greatest single programming language ever designed -- Alan Kay
+#+end_quote
+
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.
+
+#+begin_quote
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non *luctus* diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  /Fusce/ sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.
+
+Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien. -- Someone
+#+end_quote
+
 
 ** Cras Placerat Accumsan Nulla
 
